@@ -1,13 +1,17 @@
-
+import { useState } from 'react';
 import './App.css';
 
 function App() {
 
-  let count = 0;
+  const [count, setCount] = useState(0);
 
   function handleADD(){
-    count += 1;
-    console.log(count);
+    setCount(count + 1);
+    
+  }
+
+  function handleSUB(){
+    setCount(count - 1);
   }
 
   return (
@@ -15,7 +19,7 @@ function App() {
      <div className="box">
       <p>{count}</p>
       <button onClick ={handleADD} className='add'>ADD</button>
-      <button className="sub">SUB</button>
+      <button onClick ={handleSUB}  className="sub">SUB</button>
      </div>
     </div>
   );
