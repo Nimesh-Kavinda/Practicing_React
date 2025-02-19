@@ -20,4 +20,4 @@ export const TaskCard = ({task , handleDelete, info}) => {
           </li>
       </div>
     )
-  }
+  }    
