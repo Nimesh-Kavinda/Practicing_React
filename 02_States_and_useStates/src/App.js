@@ -3,30 +3,41 @@ import './App.css';
 
 function App() {
 
-  const [count, setCount] = useState(0);
+  const [tasks, setTasks] = useState([
+    {
+      id : 5271,
+      name : "Record Lectures",
+      completed : false
+    }, 
 
-  function handleADD(){
-    setCount(count => count + 1);
-    setCount(count => count + 1);
-    setCount(count => count + 1);
-  }
-
-  function handleSUB(){
-    setCount(count - 1);
-  }
-
-  function handleRESET(){
-    setCount(0);
-  }
+    {
+      id : 7825,
+      name : "Edit React Lectures",
+      completed : true
+    }, 
+    
+    {
+      id : 8391,
+      name : "Watch Leacturs",
+      completed : false
+    }
+  ]);
 
   return (
     <div className="App">
-     <div className="box">
-      <p>{count}</p>
-      <button onClick ={handleADD} className='add'>ADD</button>
-      <button onClick ={handleSUB}  className="sub">SUB</button>
-      <button onClick ={handleRESET}  className="reset">RESET</button>
-     </div>
+    <h1>Task List</h1>
+    <ul>
+
+      {tasks.map((task) => (
+
+        <li key={task.id}>
+          <span>{task.id} - {task.name}</span>
+          <button className='delete'>Delete</button>
+        </li>
+
+      ))}
+
+    </ul>
     </div>
   );
 }
