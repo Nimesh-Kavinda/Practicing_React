@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { TaskCard } from './TaskCard';
+import { BoxCard } from './BoxCard';
 
 export const TaskList = (props) => {
 
@@ -43,6 +44,18 @@ export const TaskList = (props) => {
       ))}
 
     </ul>
+      <BoxCard result="success">
+      <p className="title">Lorem ipsum dolor sit amet.</p>
+      <p className="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, consequuntur.</p>
+      </BoxCard>
+      
+      <BoxCard result="warning">
+        <p className="title">Lorem ipsum dolor sit amet consectetur.</p>
+        <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam dolore minima asperiores vitae qui.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+      </BoxCard>
+     
+
     </>
   )
 }
