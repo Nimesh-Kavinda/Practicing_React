@@ -18,6 +18,6 @@ export const TaskCard = ({task , handleDelete, info}) => {
             <span>{task.id} - {task.name} - {info}</span>
             <button onClick={() => handleDelete(task.id)} className='delete'>Delete</button>
           </li>
-      </div>
+      </div>             
     )   
   }    
