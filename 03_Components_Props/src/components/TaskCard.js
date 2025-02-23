@@ -19,5 +19,5 @@ export const TaskCard = ({task , handleDelete, info}) => {
             <button onClick={() => handleDelete(task.id)} className='delete'>Delete</button>
           </li>
       </div>             
-    )   
+    )                       
   }    
