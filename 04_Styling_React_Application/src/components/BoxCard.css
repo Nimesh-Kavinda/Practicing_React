@@ -31,3 +31,8 @@
   .box p.description{
     font-size: 14px;
   }
+
+  .box button{
+    width: 200px;
+    margin-top: 20px;    
+  }
