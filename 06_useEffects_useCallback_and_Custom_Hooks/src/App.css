@@ -37,6 +37,17 @@
   }
 }
 
+section button{
+  padding: 10px;
+  background-color: #1175e7;
+  color: white;
+  font-size: 18px;
+  margin: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 .card{
   background-color: #f9f9ff;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
