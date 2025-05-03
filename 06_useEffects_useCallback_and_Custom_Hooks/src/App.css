@@ -36,3 +36,69 @@
     transform: rotate(360deg);
   }
 }
+
+.card{
+  background-color: #f9f9ff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  max-width: 550px;
+  height: auto;
+  margin-top: 20px;
+  padding: 10px;
+}
+
+.card p{
+  text-align: left;
+  margin-left: 2px;
+}
+
+.card .id{
+  background-color: 	#7914df;
+  width: fit-content;
+  color: white;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.card .name {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+}
+
+.card .info{
+  display: flex;
+  justify-content: space-between;
+  font-weight: 500;
+  font-size: 18px;
+  
+}
+
+.card .instock::before{
+  background-color: 	#2E8B57;
+  width: fit-content;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  content: "In Stock";
+}
+
+.card .unavailable::before{
+  background-color: 	#DC143C;
+  width: fit-content;
+  color: white;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  margin-right: 10px;
+  content: "Unavailable";
+}
