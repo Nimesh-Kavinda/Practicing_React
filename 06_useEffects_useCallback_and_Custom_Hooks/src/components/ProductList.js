@@ -4,7 +4,7 @@ import { useFetch } from '../hooks/useFetch';
 export const ProductList = () => {
 
     const [url, setUrl] = useState("http://localhost:8000/products");
-    const {data : products, loading} = useFetch(url);
+    const {data : products, loading, error} = useFetch(url);
     
 
   return (
@@ -16,6 +16,7 @@ export const ProductList = () => {
     </div>
 
       { loading && <p>Loading Products</p> }
+      { error && <p>{error}</p> }
 
         { products && products.map((product) => (
             <div className="card" key={product.id}>
