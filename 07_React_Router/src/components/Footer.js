@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
+
 export const Footer = () => {
   return (
     <footer>
-      2025 RouteMate
+    <Link to="/"> 2025 RouteMate</Link>
     </footer>
   )
 }
