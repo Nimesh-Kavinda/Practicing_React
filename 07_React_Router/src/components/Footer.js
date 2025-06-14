@@ -1,5 +1,7 @@
 export const Footer = () => {
   return (
-    <div>Footer</div>
+    <footer>
+      2025 RouteMate
+    </footer>
   )
 }
