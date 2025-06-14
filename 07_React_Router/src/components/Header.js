@@ -9,9 +9,9 @@ export const Header = () => {
       <span>RouteMate</span>
       </Link>
       <nav className="navigation">
-        <Link to="/" className='link'>Home</Link>
-        <Link to="/products" className='link'>Products</Link>
-        <Link to="/contact" className='link'>Contact</Link>
+        <NavLink to="/" className='link' end>Home</NavLink>
+        <NavLink to="/products" className='link'>Products</NavLink>
+        <NavLink to="/contact" className='link'>Contact</NavLink>
       </nav>
     </header>
   )
