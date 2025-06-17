@@ -122,6 +122,15 @@ header {
   font-size: 18px;
 }
 
+.component{
+  font-size: 22px;
+  padding: 20px 10px;
+  box-shadow: var(--box-shadow);
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
 @media screen and (max-width: 500px) {
   .productDetail .visual{
     width: 100%;
