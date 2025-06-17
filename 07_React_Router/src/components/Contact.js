@@ -5,14 +5,14 @@ export const Contact = () => {
 
   const handleSubmit = () => {
     console.log("----");
-    navigate("/");
+    return navigate("/");
   }
 
 
   return (
     <>
     <div className="component">Contact</div>
-    <button onClick={handleSubmit}>Back to Home</button>
+    <button onClick={handleSubmit}>Submit Form</button>
     </>
   )
 }
