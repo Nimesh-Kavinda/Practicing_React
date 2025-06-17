@@ -6,6 +6,7 @@ import { ProductList } from './components/ProductList';
 import { ProductDetail } from './components/ProductDetail';
 import { Contact } from './components/Contact';
 import { Admin } from './components/Admin';
+import { PageNotFound } from './components/PageNotFound';
 
 
 import './App.css';
@@ -25,6 +26,7 @@ function App() {
           <Route path='products/:id' element={<ProductDetail/>}></Route>
           <Route path='contact' element={<Contact/>}></Route>
           <Route path='/admin' element={ user ? <Admin/> :<Navigate to="/" />}></Route>
+          <Route path='*' element={<PageNotFound />}></Route>
         </Routes>
       </main>
       <Footer/>
