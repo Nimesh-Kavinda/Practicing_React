@@ -1,6 +1,6 @@
-import { useNavigate, Outlet } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-export const Contact = () => {
+export const ContactEu = () => {
   const navigate = useNavigate();
 
   const handleSubmit = () => {
@@ -11,10 +11,8 @@ export const Contact = () => {
 
   return (
     <>
-    <div className="component">Contact</div>
-     <Outlet />
+    <div className="component">Contact Europe</div>
     <button onClick={handleSubmit}>Submit Form</button>
-   
     </>
   )
 }
