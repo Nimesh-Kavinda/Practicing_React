@@ -13,7 +13,7 @@ import './App.css';
 
 function App() {
 
-  const user = true;
+  const user = false;
 
   return (
       <div className="App">
@@ -25,7 +25,7 @@ function App() {
           <Route path='products' element={<ProductList/>}></Route>
           <Route path='products/:id' element={<ProductDetail/>}></Route>
           <Route path='contact' element={<Contact/>}></Route>
-          <Route path='/admin' element={ user ? <Admin/> :<Navigate to="/" />}></Route>
+          <Route path='/admin' element={ user ? <Admin/> :<PageNotFound />}></Route>
           <Route path='*' element={<PageNotFound />}></Route>
         </Routes>
       </main>
