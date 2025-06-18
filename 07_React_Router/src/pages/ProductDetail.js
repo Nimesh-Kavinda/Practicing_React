@@ -5,6 +5,8 @@ export const ProductDetail = () => {
   const params = useParams();
 
   return (
-    <div className="component">Product {params.id} - Detail</div>
+    <main>
+      <div className="component">Product {params.id} - Detail</div>
+    </main>
   )
 }

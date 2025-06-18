@@ -12,6 +12,8 @@ export const ProductList = () => {
   // console.log(location);
 
   return (
-    <div className="component">ProductList</div>
+    <main>
+      <div className="component">ProductList</div>
+    </main>
   )
 }
